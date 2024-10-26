@@ -1,0 +1,9 @@
+---
+// src/pages/projects.astro
+import ProjectsComponent from "../components/react/Projects.jsx";
+import "../styles/global.css";
+---
+
+<body>
+  <ProjectsComponent client:only="react" />
+</body>

@@ -1,0 +1,9 @@
+---
+// src/pages/contact.astro
+import ContactComponent from "../components/react/Contact.jsx";
+import "../styles/global.css";
+---
+
+<body>
+  <ContactComponent client:only="react" />
+</body>

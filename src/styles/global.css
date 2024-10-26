@@ -1,0 +1,44 @@
+/* src/styles/global.css */
+
+:root {
+    --bg-color: #0d0d0d;
+    --text-color: #e0e0e0;
+    --highlight-color: #b3b3b3;
+    --accent-color: #8E2DE2;
+    --font-mono: 'Courier New', Courier, monospace;
+    --font-size-large: 2.5rem;
+    --font-size-small: 1rem;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-mono);
+    margin: 0;
+    padding: 0;
+}
+
+.MuiTypography-root	 {
+    color: var(--text-color) !important;
+    font-family: var(--font-mono) !important;
+    font-weight: 400 !important;
+}
+
+/* Typewriter effect */
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--text-color);
+    animation: typing 1s steps(15, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Manually set width based on character length of the text */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 18ch; } /* Adjust 13ch to match the full width of "I am a developer." */
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}

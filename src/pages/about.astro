@@ -1,0 +1,9 @@
+---
+// src/pages/about.astro
+import AboutComponent from "../components/react/About.jsx";
+import "../styles/global.css";
+---
+
+<body>
+  <AboutComponent client:only="react" />
+</body>
