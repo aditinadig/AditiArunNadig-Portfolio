@@ -10,7 +10,7 @@ export const highlights = [
     {
       iconName: "SchoolIcon",
       title: "Student Life at UIC",
-      description: "Navigating the world of software engineering UI designing and web app development like a pro.",
+      description: "Navigating the world of software engineering, UI designing and web app development like a pro.",
       color: "var(--primary-color)",
     },
     {
