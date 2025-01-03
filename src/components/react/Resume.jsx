@@ -94,7 +94,7 @@ const Resume = () => {
         >
           <Box
             component="iframe"
-            src="/Fresh CV.pdf"
+            src="/CV.pdf"
             type="application/pdf"
             sx={{
               width: "100%",
