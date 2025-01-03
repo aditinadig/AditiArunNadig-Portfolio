@@ -40,14 +40,14 @@ function Home() {
 
         {/* Scroll Down Arrow */}
         <Box sx={{ mt: 5 }}>
-          <Typography variant="body2" sx={{ color: "var(--highlight-color)" }}>
+          <Typography variant="body" sx={{ color: "var(--highlight-color)" }}>
             ↓
           </Typography>
         </Box>
 
         {/* Footer Prompt */}
         <Typography
-          variant="caption"
+          variant="body"
           sx={{ color: "var(--highlight-color)", mt: 4, display: "block" }}
         >
           Got something to have a conversation on? Ping me.
