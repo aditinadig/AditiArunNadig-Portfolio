@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 
 function Contact() {
   return (
-    <Box sx={{ padding: "var(--spacing-lg)",  }}>
+    <Box sx={{ padding: "var(--spacing-lg)" }}>
       <Navbar />
       <Box
         sx={{
@@ -23,42 +23,66 @@ function Contact() {
         >
           Contact Me
         </Typography>
-        <form action="mailto:aditiarunnadig@gmail.com" method="post">
+        <form
+          action="mailto:aditiarunnadig@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
           <TextField
             label="Name"
+            name="name" // Add name attribute
             fullWidth
             margin="normal"
             required
             InputLabelProps={{ style: { color: "var(--subtext-color)" } }}
-            sx={{ "& .MuiInputBase-root": { color: "var(--text-color)" } }}
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "var(--subtext-color)", // Default border color
+                },
+                "&:hover fieldset": {
+                  borderColor: "var(--subtext-color)", // Border color on hover
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "var(--subtext-color)", // Border color when focused
+                },
+              },
+              "& .MuiInputBase-root": { color: "var(--text-color)" },
+            }}
           />
-          <TextField
-            label="Email"
-            type="email"
-            fullWidth
-            margin="normal"
-            required
-            InputLabelProps={{ style: { color: "var(--subtext-color)" } }}
-            sx={{ "& .MuiInputBase-root": { color: "var(--text-color)" } }}
-          />
+
           <TextField
             label="Message"
+            name="message" // Add name attribute
             multiline
             rows={4}
             fullWidth
             margin="normal"
             required
             InputLabelProps={{ style: { color: "var(--subtext-color)" } }}
-            sx={{ "& .MuiInputBase-root": { color: "var(--text-color)" } }}
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "var(--subtext-color)", // Default border color
+                },
+                "&:hover fieldset": {
+                  borderColor: "var(--subtext-color)", // Border color on hover
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "var(--subtext-color)", // Border color when focused
+                },
+              },
+              "& .MuiInputBase-root": { color: "var(--text-color)" },
+            }}
           />
           <Button
             fullWidth
             type="submit"
             sx={{
               mt: 2,
-              backgroundColor: "var(--primary-color)",
+              backgroundColor: "var(--text-color)",
               color: "var(--bg-color)",
-              "&:hover": { backgroundColor: "var(--accent-color)" },
+              "&:hover": { backgroundColor: "var(--subtext-color)" },
             }}
           >
             Send

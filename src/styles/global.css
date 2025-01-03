@@ -3,6 +3,7 @@
 :root {
     --bg-color: #0d0d0d;
     --text-color: #e0e0e0;
+    --subtext-color: #b3b3b3;
     --highlight-color: #b3b3b3;
     --accent-color: #8E2DE2;
     --font-mono: 'Courier New', Courier, monospace;
